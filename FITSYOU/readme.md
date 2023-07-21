@@ -48,6 +48,14 @@ The outcome of our project will be :
    - Virtual try-on of the recommended clothes
 2. a figma prototype of the project
 
+# `Persepective`
+In the future , we plane to enhance the quality of our solution by:
+- Optimizing rendering time
+- Gathering more data about what we suggested to the user and what he actually bought so that we can improve the performance of our recommendation system
+- train the model on a custome data of a store including traditional clothing stores
+- Tune the models   
+
+
 
 
 
