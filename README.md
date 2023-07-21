@@ -2,7 +2,7 @@
 
 # Abstract
 
-## Background and Problem Statement:
+## Background and Problem Statement
 Tourists visiting Morocco often face challenges in accessing comprehensive, real-time information about attractions and cultural sites. Traditional guidebooks can be outdated or limited in scope, and human tour guides may not always be available or affordable. Additionally, tourists may struggle to identify landmarks in their photos, and they might desire to enhance their travel photos by removing distractions or improving resolution. A solution is needed to provide tourists with an intuitive, accessible, and interactive resource for exploring Morocco.
 
 ## Impact and Proposed Solution
