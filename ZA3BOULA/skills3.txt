@@ -1,0 +1,1 @@
+Python, Java, Spring, Neo4J, Elasticsearch, Flex, Agile development, Oracle, Hibernate, JQuery, Bootstrap, AngularJS, CSS, MySQL, MongoDB, JUnit, Mockito, Grinder, JMeter, Git, SVN, Logstash, Redis, Scikit
