@@ -13,6 +13,5 @@ This tool will revolutionize the way tourists interact with their travel environ
 We deliver a chatbot capable of:
 1. Responding to user queries in text and speech formats.
 2. Identifying Moroccan landmarks from user-uploaded images and providing relevant information.
-3. Enhancing user-uploaded images by editing them.
    
 # Instructions
