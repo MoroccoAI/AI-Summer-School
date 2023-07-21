@@ -4,7 +4,7 @@ import base64
 from io import BytesIO
 from pdfminer.high_level import extract_text
 import openai
-openai.api_key = "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"
+openai.api_key = "your_token_key"
 
 
 models = openai.Model.list()
