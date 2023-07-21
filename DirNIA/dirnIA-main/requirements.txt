@@ -1,0 +1,13 @@
+pip install  django djangorestframework
+pip install langchain transformers sentence_transformers
+pip install -q -U trl  accelerate
+pip install -q  bitsandbytes
+pip install chromadb
+pip install tiktoken
+pip install pdfplumber
+pip install Chroma
+pip install accelerate
+pip install -i https://test.pypi.org/simple/ 
+pip install einops
+pip install langchain pypdf
+pip install wikipedia-api
