@@ -9,13 +9,11 @@
 `FITSYOU` is an on-site clothing solution that, based on client clothes that usually reflect his preferences, suggest the best clothes present in the store for him and gives him a virtual try-ons of the recommended clothes:
 
 Here is a simple demo of our solution:
-<p>
+<p align="center">
 ![Alt Text](./video.gif)
-</p lign="center">
+</p>
 
-<div style="text-align:center">
-    ![Alt Text](./video.gif)
-</div>
+
 
 Here is a basic pipeline of our solution:
  <p align="center">
