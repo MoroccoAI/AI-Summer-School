@@ -10,8 +10,9 @@
 
 Here is a simple demo of our solution:
 
-![Alt Text](./video.gif)
-
+<div style="text-align:center">
+    ![Alt Text](video.gif)
+</div>
 
 Here is a basic pipeline of our solution:
  <p align="center">
