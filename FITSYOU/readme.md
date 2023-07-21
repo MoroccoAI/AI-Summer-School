@@ -30,6 +30,15 @@ Moreover, store staff may struggle to provide effective recommendations due to l
 <p align="center">
     <img src='./detailled_pipeline.png' width=800>
 </p>
+### more details about the virtual try-on multi model
+<p align="center">
+    <img src='./virtual_try_on.jpeg' width=800>
+</p>
+### RESNET architecture
+
+<p align="center">
+    <img src='./RESNET.jpeg' width=800>
+</p>
 
 
 # `Deliverable`
