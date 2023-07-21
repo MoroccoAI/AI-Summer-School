@@ -10,7 +10,7 @@
 
 Here is a simple demo of our solution:
 <p align="center">
-![Alt Text](./video.gif)
+    <img src="./video.gif" alt="Alt Text">
 </p>
 
 
