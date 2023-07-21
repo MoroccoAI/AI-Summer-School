@@ -1,0 +1,1 @@
+Programmation: HTML/CSS, JS, PHP, DJANGO, BOOTSRAP, DOT.NET, PYTHON, JAVA, JEE, Spring Boot. Base de données: SQL SERVER, MYSQL, PL/SQL, ORACLE. Modélisation: Merise, UML. Intégration et déploiement: GitHub, Docker.
