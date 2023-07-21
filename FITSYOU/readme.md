@@ -10,10 +10,7 @@
 
 Here is a simple demo of our solution:
 
-<video controls>
-    <source src="./video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>)
+![Alt Text](./video.gif)
 
 
 Here is a basic pipeline of our solution:
