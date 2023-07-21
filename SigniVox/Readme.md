@@ -7,3 +7,5 @@ Our project aims to develop a solution that enables users to effortlessly search
 The system enables users to quickly find specific information within audio files. Whether it's a student looking for information in a lengthy course lecture, a home cook searching for a particular recipe ingredient in a recorded cooking tutorial, or also for the deaf who struggling with audio, this application will streamline the process of finding relevant information within audio recordings.
 #### Deliverables for Friday 
 A chatbot with mentioned options 
+#### the use of Our solution
+Notebook with gradio App
