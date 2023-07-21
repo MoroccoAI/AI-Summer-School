@@ -40,3 +40,9 @@ The outcome of our project will be :
 2. a figma prototype of the project
 
 
+1. Main item
+    1. Nested item 1
+    2. Nested item 2
+2. Next main item
+3. Another main item
+
