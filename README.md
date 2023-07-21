@@ -39,6 +39,8 @@ thereby enabling more time for patient care tasks.
 
 ## Presentation
 
+https://drive.google.com/file/d/1_QBrezdwkQEH314YM9CA9XBfjrO_5nwG/view?usp=sharing
+
 ## Demo
 
 https://www.youtube.com/watch?v=MYvLGfyLo38
