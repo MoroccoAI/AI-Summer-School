@@ -21,3 +21,5 @@ Our plan is to make a simple, yet accurate, model to parse the informations from
 # Expected Deliverables:
 A web-app to upload condidate's CVs and match them with the right job offers.
 
+# How to run it 
+streamlit run h.py
