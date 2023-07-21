@@ -30,3 +30,11 @@ Here is a more detailled pipeline of our solution:
 <p align="center">
     <img src='./detailled_pipeline.png' width=800>
 </p>
+
+
+# `Deliverable`
+The outcome of our project will be :
+- A recommender system based on client appearence
+- A virtual try-on of the recommended clothes
+- a figma prototype of the project
+
