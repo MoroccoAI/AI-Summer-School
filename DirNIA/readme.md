@@ -1,4 +1,4 @@
-# The Summer school project
+# The Summer school project (TutorAssistant)
 
 ## Description:
 
