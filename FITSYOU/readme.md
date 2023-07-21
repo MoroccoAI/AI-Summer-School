@@ -17,10 +17,10 @@ Here is a simple demo of our solution:
 
 Here is a basic pipeline of our solution:
  <p align="center">
-    <img src='./pipeline.png' width=480>
+    <img src='./pipeline.png' width=800>
 </p>
 
 Here is a more detailled pipeline of our solution:
 <p align="center">
-    <img src='./detailled_pipeline.png' width=480>
+    <img src='./detailled_pipeline.png' width=800>
 </p>
