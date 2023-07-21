@@ -34,7 +34,10 @@ Here is a more detailled pipeline of our solution:
 
 # `Deliverable`
 The outcome of our project will be :
-- A recommender system based on client appearence
-- A virtual try-on of the recommended clothes
+<p align="center">
+- Python code of a recommender system based on client appearence
+- Python code of a virtual try-on of the recommended clothes
 - a figma prototype of the project
+</p>
+
 
