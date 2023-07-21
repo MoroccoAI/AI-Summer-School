@@ -14,19 +14,19 @@ Moreover, store staff may struggle to provide effective recommendations due to l
 
 `FITSYOU` is an on-site clothing solution that, based on client clothes that usually reflect his preferences, suggest the best clothes present in the store for him and gives him a virtual try-ons of the recommended clothes, this will improve client experience and encrease potential income for the clothing store:
 
-Here is a simple demo of our solution:
+### Here is a simple demo of our solution:
 <p align="center">
     <img src="./video.gif" alt="Alt Text">
 </p>
 
 
 
-Here is a basic pipeline of our solution:
+### Here is a basic pipeline of our solution:
  <p align="center">
     <img src='./pipeline.png' width=800>
 </p>
 
-Here is a more detailled pipeline of our solution:
+### Here is a more detailled pipeline of our solution:
 <p align="center">
     <img src='./detailled_pipeline.png' width=800>
 </p>
