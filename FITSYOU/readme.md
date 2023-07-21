@@ -11,7 +11,7 @@
 Here is a simple demo of our solution:
 
 <div style="text-align:center">
-    ![Alt Text](video.gif)
+    ![Alt Text](./video.gif)
 </div>
 
 Here is a basic pipeline of our solution:
