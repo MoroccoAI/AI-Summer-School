@@ -1,4 +1,4 @@
-# Bir-radar
+# BeRadar
 <div class="row" align="center">
     <img src="static/logo.png" width="100%">
 </div>
