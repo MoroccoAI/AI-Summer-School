@@ -1,0 +1,25 @@
+Measure,Calibration,Units,Data type,Quality control
+Site,NA,NA,Site identifier,NA
+Plot,NA,number,plot number 1-42,NA
+Treatment,NA,functional group identifier,functional group (see supporting document Plot_schematic.rtf),NA
+Microbial org N,"10,8,6,4,2ppm",mg kg-1,Microbial Biomass - Organic Nitrogen,"5% analytical replicates, recalibration and blank every 20 samples. "
+Mic.total.N,"10,8,6,4,2ppm",mg kg-1,Microbial biomass- total nitrogen,"5% analytical replicates, recalibration and blank every 20 samples. "
+CN,<2 acetanilide every 20 samples,%,"Ground soil extracts (carbon and nitrogen extracts, as explained in CN_stocks_collection_methods.rtf))",Standard and blanks were run every 20 samples 
+Mic C,100mg/l,mg kg-1,Microbial biomass- total carbon,"5% analytical replicates, blank every 20 samples. "
+Mic.NO3,"5,4,3,2,1ppm",mg kg-1,Microbial biomass- nitrate,"5% analytical replicates, recalibration and blank every 20 samples. "
+Mic.NH4,"5,4,3,2,1ppm",mg kg-1,Microbial biomass- ammonium,"5% analytical replicates, recalibration and blank every 20 samples. "
+Mineralised NO3,"5,4,3,2,1ppm",mg kg-1,Nitrification rate,"5% analytical replicates, recalibration and blank every 20 samples. "
+Mineralised NH4,"5,4,3,2,1ppm",mg kg-1,Mineralisation rate of ammonium only,"5% analytical replicates, recalibration and blank every 20 samples. "
+Total mineralised N,NA,mg kg-1,Total mineralisation rate,"5% analytical replicates, recalibration and blank every 20 samples. "
+Unmin nit,"5,4,3,2,1ppm",mg kg-1,Unmineralised Nitrogen,"5% analytical replicates, recalibration and blank every 20 samples. "
+Unmin Amm,"5,4,3,2,1ppm",mg kg-1,Unmineralised Ammonia,"5% analytical replicates, recalibration and blank every 20 samples. "
+Unmin Tot N,"5,4,3,2,1ppm",mg kg-1,Unmineralised Total Nitrogen,"5% analytical replicates, recalibration and blank every 20 samples. "
+Unmin DON,"5,4,3,2,1ppm",mg kg-1,Unmineralised Dissolved Organic Nitrogen (extracted in water),"5% analytical replicates, recalibration and blank every 20 samples. "
+Min DON,"5,4,3,2,1ppm",mg kg-1,Mineralisation rate of Dissolved Organic Nitrogen (extracted in water),"5% analytical replicates, recalibration and blank every 20 samples. "
+DC-H2O,100mg/l,mg kg-1,Dissolved total carbon,"5% analytical replicates, blank every 20 samples. "
+DOC-H2O,NA,mg kg-1,Dissolved organic carbon,"5% analytical replicates, blank every 20 samples. "
+NO3- H2O,"5,4,3,2,1ppm",mg kg-1,Water extractable nitrate,"5% analytical replicates, recalibration and blank every 20 samples. "
+NH4- H2O,"5,4,3,2,1ppm",mg kg-1,Water extractable ammonium,"5% analytical replicates, recalibration and blank every 20 samples. "
+Total N H2O,"5,4,3,2,1ppm",mg kg-1,Water extractable total nitrogen,"5% analytical replicates, recalibration and blank every 20 samples. "
+Total Organic N H2O,"5,4,3,2,1ppm",mg kg-1,Water extractable total nitrogen,"5% analytical replicates, recalibration and blank every 20 samples. "
+BD,NA,g m2,Bulk density 5-10cm depth,Outlier checks

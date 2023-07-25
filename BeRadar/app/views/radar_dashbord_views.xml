@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="view_radar_dashbord_tree">
+      <field name="name">radar.dashbord.tree</field>
+      <field name="model">radar.dashbord</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="total_wells" widget="statinfo" string="Total Wells"/>
+          <field name="auth_wells" widget="statinfo" string="Authorized Wells"/>
+          <field name="n_auth_wells" widget="statinfo" string="Non-Authorized Wells"/>
+          <field name="infractions" widget="statinfo" string="Infractions"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions -->
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="action_radar_dashbord">
+      <field name="name">Dashbord Action</field>
+      <field name="res_model">radar.dashbord</field>
+      <field name="view_mode">tree</field>
+      <field name="context">{}</field>
+    </record>
+
+    <!-- <menuitem name="radar" 
+              id="menu_radar_root"
+              web_icon="beradar,static/description/icon.png"
+              sequence="0"
+              /> -->
+
+    <menuitem name="Dashbord" 
+              id="menu_dashbord"
+              sequence="10"
+              parent="menu_radar_root"
+              action="action_radar_dashbord"
+              />
+
+  </data>
+</odoo>
