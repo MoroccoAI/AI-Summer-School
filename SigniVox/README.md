@@ -9,3 +9,8 @@ The system enables users to quickly find specific information within audio files
 A chatbot with mentioned options 
 #### the use of Our solution
 Notebook with gradio App
+#### Members 
+Mohammed Aziz : azmohammed997@gmail.com
+Imane briki : imane.briki25@gmail.com
+Maroua Razzouqi : razzouqi.maroua@gmail.com
+Anas ouafki : Anasouafki@gmail.com
