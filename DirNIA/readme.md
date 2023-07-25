@@ -85,3 +85,36 @@ Tutor chatbot that contains the following features:
 **Student:** My progress in the course is going well. What's next for me?
 
 **Chatbot:** Congratulations on your progress! If your overall performance meets the required standards, you are ready to move on to the next course. I can provide you with information about the upcoming courses and guide you through the enrollment process if needed.
+
+# How to use
+
+This app is deployed using the Django framework. To run it, follow these steps:
+
+1. Open Anaconda prompt and create a new environment:
+
+```bash
+conda create --name myenv
+```
+
+2. Activate the new environment:
+
+```bash
+activate myenv
+```
+
+3. Install the required dependencies:
+
+```bash
+pip install django djangorestframework langchain transformers sentence_transformers trl accelerate bitsandbytes chromadb tiktoken pdfplumber Chroma accelerate einops langchain pypdf wikipedia-api
+pip install -i https://test.pypi.org/simple/ 
+```
+
+4. Using the `cd` command, navigate to your app's base directory (where the `manage.py` file is located).
+
+5. Run the server using the following command:
+
+```bash
+python manage.py runserver
+```
+
+6. Open your browser and go to `http://127.0.0.1:8000/`.
