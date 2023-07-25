@@ -1,0 +1,7 @@
+transformers
+datasets 
+jiwer
+torch
+transformers[torch]
+pillow
+torchvision
