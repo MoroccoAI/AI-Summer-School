@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ml_radar,access_ml_radar,model_ml_radar,base.group_user,1,1,1,1
+access_radar_dashbord,access_radar_dashbord,model_radar_dashbord,base.group_user,1,1,1,1

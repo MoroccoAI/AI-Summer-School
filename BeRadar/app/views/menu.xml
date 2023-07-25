@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="view_ml_radar_tree">
+      <field name="name">ml.radar.tree</field>
+      <field name="model">ml.radar</field>
+      <field name="arch" type="xml">
+        <tree create="1" delete="1" >
+          <field name="farm_id"/>
+          <field name="owner"/>
+          <field name="long"/>
+          <field name="lat"/>
+          <field name="region"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="om_ireg.action_server">
+      <field name="name">om_ireg server</field>
+      <field name="model_id" ref="model_om_ireg_om_ireg"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="om_ireg" id="om_ireg.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="om_ireg.menu_1" parent="om_ireg.menu_root"/>
+    <menuitem name="Menu 2" id="om_ireg.menu_2" parent="om_ireg.menu_root"/>
+-->
+    <!-- actions -->
+
+    <menuitem name="radar" 
+              id="menu_app_root"
+              web_icon="beradar,static/description/icon.png"
+              sequence="0"
+              />
+
+    <menuitem name="Dashbord" 
+              id="menu_dashbord"
+              sequence="0"
+              parent="menu_app_root"
+              />
+
+    <menuitem name="Well Control" 
+              id="menu_well_control"
+              sequence="1"
+              parent="menu_app_root"
+              />
+
+  </data>
+</odoo>

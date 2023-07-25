@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <!-- explicit Search view definition -->
+    <record model="ir.ui.view" id="view_ml_radar_search">
+      <field name="name">ml.radar.search</field>
+      <field name="model">ml.radar</field>
+      <field name="arch" type="xml">
+        <search string="">
+          <field name="owner" />
+          <field name="cin" />
+          <field name="farm_ref" />
+        </search>
+      </field>
+    </record>
+
+    <!-- explicit form view definition -->
+    <record model="ir.ui.view" id="view_ml_radar_form">
+      <field name="name">ml.radar.form</field>
+      <field name="model">ml.radar</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="farm_ref" />
+                <field name="area" />
+                <field name="long" />
+                <field name="lat" />
+                <field name="region" />
+                <field name="is_zone_authorized" />
+                <field name="is_well_authorized" />
+                <field name="is_alerted" />
+              </group>
+              <group>
+                <field name="id_img" widget="image" />
+                <!-- <style>
+                  .o_form_view .oe_image img[src*="/web/image/ml.radar/id_img/"] 
+                  {
+                    max-width: 500px; /* Set the maximum width for the image */
+                    max-height: 500px; /* Set the maximum height for the image */
+                  }
+                </style> -->
+              </group>
+            </group>
+            <!-- <notebook>
+              <page name="services" string="Services">
+              </page>
+            </notebook> -->
+
+          </sheet>
+
+        </form>
+      </field>
+    </record>
+
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="view_ml_radar_tree">
+      <field name="name">ml.radar.tree</field>
+      <field name="model">ml.radar</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="farm_id" />
+          <field name="farm_ref" />
+          <field name="owner" />
+          <field name="cin" />
+          <field name="long" />
+          <field name="lat" />
+          <field name="region" />
+          <field name="well_ref" />
+          <field name="is_zone_authorized" />
+          <field name="is_well_authorized" />
+          <field name="is_alerted" />
+          <field name="area" />
+          <field name="id_img" widget="image" />
+          <field name="alert_date" />
+
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions -->
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="action_ml_radar">
+      <field name="name">Radar Action</field>
+      <field name="res_model">ml.radar</field>
+      <field name="view_mode">tree,form</field>
+      <field name="context">{}</field>
+    </record>
+
+
+    <menuitem name="radar"
+      id="menu_radar_root"
+      web_icon="beradar,static/description/icon.png"
+      sequence="0"
+    />
+
+    <menuitem name="Well Control"
+      id="menu_well_control"
+      sequence="20"
+      parent="menu_radar_root"
+      action="action_ml_radar"
+    />
+
+  </data>
+</odoo>
