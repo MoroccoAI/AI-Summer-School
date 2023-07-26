@@ -1,0 +1,225 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ChatGPT Interface</title>
+        <style>
+            /* Reset default margin and padding */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            /* Set a background color and font styles for the entire page */
+            body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* Chat container */
+            .chat-container {
+                max-width: 600px;
+                margin: 30px auto;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            /* Chat header */
+            .chat-header {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                text-align: center;
+            }
+            
+            /* Chat messages container */
+            .chat-messages {
+                padding: 20px;
+                min-height: 300px;
+                max-height: 400px;
+                overflow-y: auto;
+            }
+            
+            /* Individual chat messages */
+            .message {
+                padding: 8px 12px;
+                border-radius: 4px;
+                margin-bottom: 10px;
+            }
+            
+            /* User's message */
+            .user-message {
+                background-color: #007bff;
+                color: #fff;
+                text-align: right;
+            }
+            
+            /* Bot's message */
+            .bot-message {
+                background-color: #f0f0f0;
+            }
+            
+            /* Chat input area */
+            .chat-input {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                overflow: scroll;
+            }
+            
+            /* Textarea input */
+            .chat-input textarea {
+                flex: 1;
+                resize: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 8px;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+            
+            /* Send button */
+            .chat-input button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 8px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            .chat-wrapper {
+            display: flex;
+            max-width: 850px;
+            margin: 30px auto;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        /* User information container */
+        .user-info {
+            flex: 1;
+            padding: 20px;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            color: #333;
+        }
+
+        /* User information text */
+        .user-info p {
+            margin-bottom: 10px;
+        }
+
+        /* Chat container */
+        .chat-container {
+            flex: 3;
+            background-color: #fff;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            overflow: hidden;
+        }
+        .completed{
+            color: green;
+            list-style: none;
+            margin: 10;
+        }
+        .non_completed{
+            color: rebeccapurple;
+            list-style: none;
+            margin: 10;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="chat-wrapper">
+            <div class="user-info">
+                <p>Name: John Doe</p>
+                <p>Email: john.doe@example.com</p>
+                <h3>Course Progress</h3>
+
+
+                <ul>
+                    {% for item in syllabus %}
+                    {% if item.completed == True %}
+                    <li class="completed">{{ item.name }}</li>
+                    {% else %}
+                    <li class="non_completed">{{ item.name }}</li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+
+
+            </div>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h1>TutorAssistant</h1>
+                </div>
+                <div class="chat-messages">
+                    <!-- Messages will be dynamically added here -->
+                    
+
+                </div>
+                <div class="chat-input">
+                    <textarea placeholder="Enter your text here..."></textarea>
+                    <button onclick="sendMessage() ">Send</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Function to send the user's message and receive a bot response
+            function sendMessage() {
+                // Get the user's message from the textarea
+                const userMessage = document.querySelector("textarea").value.trim();
+                
+                // If the user's message is not empty, proceed
+                if (userMessage !== "") {
+                    // Create a new div element to hold the user's message and add it to the chat messages container
+                    const userMessageDiv = document.createElement("div");
+                    userMessageDiv.classList.add("message", "user-message");
+                    userMessageDiv.textContent = userMessage;
+                    document.querySelector(".chat-messages").appendChild(userMessageDiv);
+    
+                    // Clear the textarea
+                    document.querySelector("textarea").value = "";
+    
+                    // Simulate a bot response (replace this with actual backend call in your implementation)
+                        fetch(`get_text/${userMessage}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data)
+                            const botResponse = data.text; // Replace this with the actual response from your Chatbot backend
+                            const botMessageDiv = document.createElement("div");
+                            botMessageDiv.classList.add("message", "bot-message");
+                            if(  botResponse.indexOf("see more click the link") !== -1)
+                                botMessageDiv.innerHTML = botResponse;
+                            else
+                                botMessageDiv.innerHTML = botResponse;
+                            document.querySelector(".chat-messages").appendChild(botMessageDiv);
+
+                            
+                        })
+                        .catch(error => {
+                            console.log(error.message) 
+                        }) 
+
+                        
+    
+                        // Scroll to the bottom of the messages container to show the latest message
+                        const messagesContainer = document.querySelector(".chat-messages");
+                        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                     // Simulate a slight delay for bot response (1 second in this case)
+                }
+            }
+        </script>
+    </body>
+</html>
