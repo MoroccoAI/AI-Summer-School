@@ -19,14 +19,14 @@ After the detection and transcription to the text phase, we can use the gathered
 ## Running the Project
 1. First clone the main repository.
 ```bash
-$ git clone https://github.com/BounharAbdelaziz/handwritten-arabic-ocr.git
+$ git clone https://github.com/MoroccoAI/AI-Summer-School.git
 ```
 2.	Create a virtual environment (optional but recommended)
 3.	Make sure to install the required packages:
 ```bash
 $ pip install -r requirements.txt 
 ```
-4.	Run the notebook for either training
+4.	Run the notebook for either training or testing
 
 ## Contribution
 We welcome contributions to this project. If you find any issues or want to add new features, feel free to create a pull request.
