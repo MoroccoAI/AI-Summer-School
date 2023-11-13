@@ -64,7 +64,8 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 pdf_path = "chatbot/dsa-1.pdf" 
 
 EMB_SBERT_MPNET_BASE = "sentence-transformers/all-mpnet-base-v2"
-huggingfacehub_api_token = "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"
+YOUR_API_TOKEN = ""
+huggingfacehub_api_token = f"{YOUR_API_TOKEN}"
 LLM_FLAN_T5_LARGE = "google/flan-t5-large"
 config = {"persist_directory":"store",
         "load_in_4bit":True,
